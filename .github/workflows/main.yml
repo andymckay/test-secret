@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Upload artifact
+      uses: actions/upload-artifact@v*
     - name: Run a one-line script
       run: |
         echo ${{ secrets.A_SECRET }}
