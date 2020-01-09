@@ -11,6 +11,6 @@ jobs:
     - name: Run a one-line script
       run: |
         echo ${{ secrets.A_SECRET }}
-        echo ${{ secrets.A_SECRET }} | base64
+        echo ${{ secrets.A_SECRET }} | rev
         echo ${{ secrets.ANOTHER_SECRET }}
-        echo ${{ secrets.ANOTHER_SECRET }} | base64
+        echo ${{ secrets.ANOTHER_SECRET }} | rev
