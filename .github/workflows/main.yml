@@ -14,3 +14,5 @@ jobs:
         echo ${{ secrets.A_SECRET }} | rev
         echo ${{ secrets.ANOTHER_SECRET }}
         echo ${{ secrets.ANOTHER_SECRET }} | rev
+        echo ${{ secrets.ANOTHER_SECRET_2 }}
+        echo ${{ secrets.ANOTHER_SECRET_2 }} | rev
