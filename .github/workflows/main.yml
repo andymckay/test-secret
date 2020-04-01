@@ -1,6 +1,8 @@
 name: CI
 
 on: [push, pull_request, repository_dispatch]
+env:
+  A_SECRET_ENV: ${{ secrets.A_SECRET }}
 
 jobs:
   build:
@@ -16,3 +18,5 @@ jobs:
         echo ${{ secrets.ANOTHER_SECRET }} | rev
         echo ${{ secrets.ANOTHER_SECRET_2 }}
         echo ${{ secrets.ANOTHER_SECRET_2 }} | rev
+        echo A_SECRET_ENV
+        echo A_SECRET_ENV | rev
