@@ -18,5 +18,5 @@ jobs:
         echo ${{ secrets.ANOTHER_SECRET }} | rev
         echo ${{ secrets.ANOTHER_SECRET_2 }}
         echo ${{ secrets.ANOTHER_SECRET_2 }} | rev
-        echo A_SECRET_ENV
-        echo A_SECRET_ENV | rev
+        echo $A_SECRET_ENV
+        echo $A_SECRET_ENV | rev
